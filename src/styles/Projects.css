@@ -1,0 +1,59 @@
+/* Projects Section */
+.projects {
+    padding: 80px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .projects h2 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .project {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .project h3 {
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .project p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0066cc;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  .project a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .projects {
+      padding: 40px 20px;
+    }
+  
+    .project {
+      margin: 10px;
+    }
+  }
+  

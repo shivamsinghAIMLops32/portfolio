@@ -1,0 +1,33 @@
+/* GitHub Section */
+.github {
+    padding: 80px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .github h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .github a {
+    color: #0066cc;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  
+  .github a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .github h2 {
+      font-size: 2rem;
+    }
+  
+    .github a {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,81 @@
+/* Home Section */
+.home {
+  text-align: center;
+  padding: 80px 20px;
+  animation: fadeIn 1.5s ease-in-out;
+  background: linear-gradient(45deg, #ff6b6b, #f7a8b8, #42f5c3, #3498db);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite; /* Adds animation to the background */
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Heading Styles */
+.home h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Text shadow for better visibility */
+}
+
+/* Typing effect for the paragraph */
+.home p {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 10px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #fff; /* Create the typing cursor */
+  width: 0;
+  animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite; /* Apply typing effect */
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Cursor blinking effect */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 2.5rem;
+  }
+
+  .home p {
+    font-size: 1.2rem;
+  }
+}

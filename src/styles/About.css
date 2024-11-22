@@ -1,0 +1,160 @@
+/* About Section */
+
+/* Heading styles */
+.about h2 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Typing animation for the paragraph */
+.about p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 10px;
+  white-space: nowrap; /* Prevents text from breaking into multiple lines */
+  overflow: hidden; /* Hides the text that is not yet revealed */
+  width: 0; /* Start with no text visible */
+  border-right: 3px solid #333; /* Creates the typing cursor effect */
+  animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite; /* Apply typing effect */
+  animation-fill-mode: both; /* Ensure the animation state persists after completion */
+}
+
+/* Keyframe for typing animation */
+@keyframes typing {
+  from {
+    width: 0; /* Start with no text */
+  }
+  to {
+    width: 100%; /* Reveal the full text */
+  }
+}
+
+/* Cursor blinking effect */
+@keyframes blink {
+  50% {
+    border-color: transparent; /* Makes the cursor disappear halfway */
+  }
+}
+
+/* Stop the cursor blinking after the typing animation */
+.about p.typing-complete {
+  border-color: transparent; /* Remove the cursor after typing is complete */
+  animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end 1; /* Stop blinking after typing */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+} */
+
+/* About Section */
+.about {
+  padding: 80px 20px;
+  background-color: #f9f9f9;  /* Light background color */
+  background: linear-gradient(45deg, #ff6b6b, #f7a8b8, #42f5c3, #3498db); /* Add gradient background */
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite; /* Animates the background gradient */
+  text-align: center;
+  animation: slideUp 1.5s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Gradient animation for the background */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Heading styles */
+.about h2 {
+  font-size: 2.5rem;
+  color: #fff; /* Light color for the heading */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Gradient text color for the paragraph */
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-top: 10px;
+  background: linear-gradient(45deg, #ff6b6b, #f7a8b8, #42f5c3, #3498db); /* Gradient text color */
+  -webkit-background-clip: text; /* Apply the gradient to the text */
+  color: transparent; /* Make the text color transparent to show the gradient */
+  display: inline-block; /* Make the text inline for gradient effect */
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite; /* Apply typing effect */
+  animation-fill-mode: both; /* Ensures the animation state persists after completion */
+}
+
+/* Keyframe for typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Cursor blinking effect */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+}
+
+.about a {
+  color: #333; /* Set default color of the link */
+  font-size: 2rem; /* Adjust the icon size */
+  transition: color 0.3s ease;
+}
+
+.about a:hover {
+  color: #6e5494; /* Change color on hover */
+}
+
+.about i {
+  margin-left: 5px; /* Add some space between text and icon */
+  vertical-align: middle; /* Align the icon in the center with text */
+}
