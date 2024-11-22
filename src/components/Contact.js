@@ -43,10 +43,10 @@ const Contact = () => {
     // Send the email using EmailJS
     emailjs
       .send(
-        'service_dacvx4r',  // Replace with your EmailJS Service ID
-        'template_qwk22cn',  // Replace with your EmailJS Template ID
+        '',  // Replace with your EmailJS Service ID
+        '',  // Replace with your EmailJS Template ID
         templateParams,
-        'eVHKM_oB0C_wLE6B4' // Replace with your EmailJS User ID
+        '' // Replace with your EmailJS User ID
       )
       .then(
         (response) => {
