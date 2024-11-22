@@ -2,12 +2,11 @@
 .contact {
   padding: 80px 20px;
   background-color: #f4f4f4;
-  animation: slideIn 1.5s ease-out forwards; /* Slide-in animation with "forwards" */
+  animation: slideIn 1.5s ease-out forwards; /* Slide-in animation */
   opacity: 0; /* Start invisible */
-  text-align: center; /* Center all content */
+  text-align: center;
 }
 
-/* Slide-in animation for the section */
 @keyframes slideIn {
   from {
     transform: translateY(50px); /* Start from bottom */
@@ -15,7 +14,7 @@
   }
   to {
     transform: translateY(0); /* Slide into place */
-    opacity: 1; /* Make it fully visible */
+    opacity: 1;
   }
 }
 
@@ -23,8 +22,8 @@
 .contact h2 {
   font-size: 2.5rem;
   color: #333;
-  text-align: center;
   margin-bottom: 30px;
+  text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
 }
 
@@ -54,146 +53,29 @@
   max-width: 600px;
   margin: 0 auto;
   animation: fadeIn 2s ease-out; /* Fade-in animation for the form */
-}
-
-/* Textarea Styling */
-.contact textarea {
-  height: 200px;
-  padding: 15px;
-  font-size: 1rem;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  margin-bottom: 20px;
-  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Focus effect for Textarea */
-.contact textarea:focus {
-  border-color: #3498db;
-  transform: scale(1.05); /* Slight zoom effect */
-  box-shadow: 0px 4px 10px rgba(52, 152, 219, 0.2); /* Add a shadow when focused */
-}
-
-/* Button Styling */
-.contact button {
-  background-color: #333;
-  color: white;
-  padding: 15px;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Hover effect for Button */
-.contact button:hover {
-  background-color: #555;
-  transform: translateY(-5px); /* Button hover animation */
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .contact h2 {
-    font-size: 2rem;
-  }
-
-  .contact textarea {
-    font-size: 0.9rem;
-  }
-
-  .contact button {
-    font-size: 1rem;
-  }
-
-  .contact p {
-    font-size: 1rem;
-  }
-}
-
-.status {
-  margin-top: 20px;
-  font-size: 1rem;
-  color: green;
-}
-
-.status.error {
-  color: red;
-}
-
-.contact input {
-  height: 40px;
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-.contact input:focus {
-  border-color: #3498db;
-  outline: none;
-}
-
-/* Error message */
-.error {
-  color: red;
-  font-size: 1rem;
-  margin-top: 10px;
-}
-
-/* Success message */
-.status {
-  color: green;
-  font-size: 1rem;
-  margin-top: 10px;
-}
-
-/* Contact Section */
-.contact {
-  padding: 80px 20px;
-  background-color: #f4f4f4;
-  text-align: center;
-}
-
-.contact h2 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 30px;
-}
-
-/* Form styling */
-.contact form {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  margin: 0 auto;
   text-align: left; /* Left-align the form fields */
 }
 
-/* Sender's Email Input */
-.contact input[type="email"] {
+/* Input and Textarea styling */
+.contact input, .contact textarea {
   font-size: 1rem;
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  width: 100%; /* Make the input field take full width */
-  box-sizing: border-box; /* Ensure padding and border are included in the width */
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
 }
 
-/* Message Input */
 .contact textarea {
-  font-size: 1rem;
-  padding: 15px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  width: 100%; /* Make the textarea take full width */
-  box-sizing: border-box; /* Ensure padding and border are included in the width */
   height: 200px;
+}
+
+/* Focus effect for input and textarea */
+.contact input:focus, .contact textarea:focus {
+  border-color: #3498db;
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0px 4px 10px rgba(52, 152, 219, 0.2); /* Add a shadow when focused */
 }
 
 /* Submit button styling */
@@ -210,9 +92,11 @@
 
 .contact button:hover {
   background-color: #555;
+  transform: translateY(-5px); /* Button hover animation */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
-/* Error and status messages */
+/* Error and success messages */
 .error {
   color: red;
   font-size: 1rem;
@@ -225,13 +109,21 @@
   margin-top: 10px;
 }
 
+/* Mobile responsiveness */
 @media (max-width: 768px) {
-  .contact input,
-  .contact textarea {
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact input, .contact textarea {
     font-size: 0.9rem;
   }
 
   .contact button {
+    font-size: 1rem;
+  }
+
+  .contact p {
     font-size: 1rem;
   }
 }

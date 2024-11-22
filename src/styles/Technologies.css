@@ -50,6 +50,7 @@ button:hover {
   background-color: #555;
 }
 
+/* Mobile responsiveness */
 @media (max-width: 768px) {
   .technologies ul li {
     font-size: 1rem;

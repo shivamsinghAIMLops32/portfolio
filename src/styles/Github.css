@@ -9,25 +9,33 @@
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 30px;
+    font-weight: 600;  /* Make the heading a bit bolder */
   }
   
   .github a {
     color: #0066cc;
     font-size: 1.2rem;
     text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; /* Added transition */
   }
   
   .github a:hover {
     text-decoration: underline;
+    color: #004a99;  /* Slightly darker blue on hover */
+    transform: translateY(-3px);  /* Slight upward movement on hover */
   }
   
   @media (max-width: 768px) {
     .github h2 {
-      font-size: 2rem;
+      font-size: 2rem;  /* Smaller heading font size on mobile */
     }
   
     .github a {
-      font-size: 1rem;
+      font-size: 1rem;  /* Smaller link font size on mobile */
+    }
+  
+    .github {
+      padding: 60px 10px;  /* Reduced padding for smaller screens */
     }
   }
   

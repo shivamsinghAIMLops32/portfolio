@@ -46,21 +46,9 @@
   animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end 1; /* Stop blinking after typing */
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .about h2 {
-    font-size: 2rem;
-  }
-
-  .about p {
-    font-size: 1rem;
-  }
-} */
-
 /* About Section */
 .about {
   padding: 80px 20px;
-  background-color: #f9f9f9;  /* Light background color */
   background: linear-gradient(45deg, #ff6b6b, #f7a8b8, #42f5c3, #3498db); /* Add gradient background */
   background-size: 400% 400%;
   animation: gradientAnimation 10s ease infinite; /* Animates the background gradient */

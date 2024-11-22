@@ -1,12 +1,17 @@
 /* Home Section */
 .home {
   text-align: center;
-  padding: 80px 20px;
+  padding: 20px 20px; /* Further reduced padding */
   animation: fadeIn 1.5s ease-in-out;
   background: linear-gradient(45deg, #ff6b6b, #f7a8b8, #42f5c3, #3498db);
   background-size: 400% 400%;
   animation: gradientAnimation 10s ease infinite; /* Adds animation to the background */
   color: #333;
+  margin-top: 73px; /* Reduced top margin */
+  height: 23vh; /* Reduced height to 25% of the viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers the content vertically */
 }
 
 @keyframes fadeIn {
@@ -32,16 +37,16 @@
 
 /* Heading Styles */
 .home h1 {
-  font-size: 3rem;
+  font-size: 1.5rem; /* Further decreased font size */
   font-weight: bold;
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Text shadow for better visibility */
 }
 
 /* Typing effect for the paragraph */
 .home p {
-  font-size: 1.5rem;
+  font-size: 1rem; /* Decreased font size for paragraph */
   color: #fff;
   margin-top: 10px;
   display: inline-block;
@@ -71,11 +76,16 @@
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+  .home {
+    height: auto; /* Allow the height to adjust based on content */
+    padding: 15px 20px; /* Further reduced padding for mobile */
+  }
+
   .home h1 {
-    font-size: 2.5rem;
+    font-size: 1.2rem;  /* Further decreased font size */
   }
 
   .home p {
-    font-size: 1.2rem;
+    font-size: 0.9rem; /* Further reduced font size for mobile */
   }
 }
